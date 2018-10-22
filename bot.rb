@@ -1,5 +1,10 @@
 require 'telegram_bot'
-token = ''
+
+# read token from token file
+token_file = File.open("verry_secret_token.sec")
+token = '' + token_file.gets(45)
+
+# creating and running bot
 bot = TelegramBot.new(token: token)
 bot.get_updates(fail_silently: true) do |message|
 	puts "@#{message.from.username}: #{message.text}"
