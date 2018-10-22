@@ -1,5 +1,5 @@
 TODO:
-  - Automaticly read api key from secret file
+  - Automaticly include api key from secret file
   - Save all Messages in Database
     * be sure to make database secret (gitignore) aswell
     * this is so errors can be corrected and analysed
